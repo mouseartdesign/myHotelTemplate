@@ -1,4 +1,4 @@
-# myHotelTemplate
+# myHotel-Template
 
 MyHotel - Responsive Hotel Website Template (HTML + CSS)
 
