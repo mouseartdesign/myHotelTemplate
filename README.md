@@ -1,7 +1,7 @@
 # myHotelTemplate
-========================================================
+
 MyHotel - Responsive Hotel Website Template (HTML + CSS)
-========================================================
+
 
 📌 Overview
 ------------
