@@ -10,6 +10,7 @@
   --off-white: #f8f9fa;
   --card: #ffffff;
   --glass: rgba(7, 17, 51, 0.04);
+  --transparent: rgba(131, 131, 131, 0.219);
   --radius: 12px;
   --radius-lg: 20px;
   --shadow-lg: 0 20px 40px rgba(7, 17, 51, 0.1);
@@ -21,7 +22,7 @@
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -40,13 +41,13 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1000;
-  transition: background .3s
+  transition: background .3s;
 }
 
 nav.scrolled {
   background: rgba(255, 255, 255, .95);
   backdrop-filter: blur(10px);
-  box-shadow: var(--shadow-sm)
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar-wrap {
@@ -55,7 +56,7 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 16px
+  padding: 6px 16px;
 }
 
 /* Center nav links in the header for wide screens */
@@ -81,7 +82,7 @@ nav.scrolled {
   gap: 12px;
   font-family: var(--fw-heading);
   color: var(--navy);
-  font-weight: 700
+  font-weight: 700;
 }
 
 .logo .mark {
@@ -93,7 +94,7 @@ nav.scrolled {
   align-items: center;
   justify-content: center;
   color: var(--navy);
-  font-weight: 700
+  font-weight: 700;
 }
 
 .nav-list {
@@ -102,7 +103,10 @@ nav.scrolled {
   padding: 0;
   display: flex;
   gap: 12px;
-  align-items: center
+  align-items: center;
+  background: var(--transparent);
+  padding: 10px;
+  border-radius: 30px;
 }
 
 .nav-list li a {
@@ -110,18 +114,18 @@ nav.scrolled {
   text-decoration: none;
   padding: 8px 10px;
   border-radius: 8px;
-  font-weight: 600
+  font-weight: 600;
 }
 
 .nav-list li a:hover {
-  background: var(--glass)
+  background: var(--glass);
 }
 
 .toggle-btn {
   display: none;
   font-size: 26px;
   cursor: pointer;
-  color: var(--navy)
+  color: var(--navy);
 }
 
 /* Buttons */
@@ -135,12 +139,12 @@ nav.scrolled {
   display: inline-block;
   border: 2px solid var(--gold);
   transition: var(--transition);
-  cursor: pointer
+  cursor: pointer;
 }
 
 .btn:hover {
   background: transparent;
-  color: var(--gold)
+  color: var(--gold);
 }
 
 /* Hero */
@@ -149,14 +153,14 @@ nav.scrolled {
   inset: 0;
   height: 100vh;
   overflow: hidden;
-  z-index: -10
+  z-index: -10;
 }
 
 .hero-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(.7) saturate(1.1)
+  filter: brightness(.7) saturate(1.1);
 }
 
 .hero {
@@ -167,7 +171,7 @@ nav.scrolled {
   text-align: center;
   color: var(--white);
   padding: 0 20px;
-  position: relative
+  position: relative;
 }
 
 .hero-content {
@@ -176,21 +180,21 @@ nav.scrolled {
   backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: var(--radius);
-  box-shadow: var(--shadow-lg)
+  box-shadow: var(--shadow-lg);
 }
 
 .hero-content h1 {
   font-family: var(--fw-heading);
   font-size: 48px;
   margin: 0 0 20px;
-  color: var(--white)
+  color: var(--white);
 }
 
 .hero-content p {
   color: rgba(255, 255, 255, .9);
   line-height: 1.8;
   font-size: 18px;
-  margin: 0
+  margin: 0;
 }
 
 /* Forms / Booking */
@@ -198,19 +202,19 @@ nav.scrolled {
   background: var(--card);
   padding: 18px;
   border-radius: 12px;
-  box-shadow: var(--shadow-sm)
+  box-shadow: var(--shadow-sm);
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .field label {
   font-size: 13px;
   color: var(--muted);
-  margin-bottom: 6px
+  margin-bottom: 6px;
 }
 
 .field input,
@@ -218,7 +222,7 @@ nav.scrolled {
   padding: 12px;
   border-radius: 8px;
   border: 1px solid rgba(7, 17, 51, .06);
-  font-size: 14px
+  font-size: 14px;
 }
 
 /* Sections */
@@ -226,7 +230,7 @@ nav.scrolled {
   padding: 100px 20px;
   max-width: var(--maxw);
   margin: 10px auto;
-  position: relative
+  position: relative;
 }
 
 .section::before {
@@ -238,7 +242,7 @@ nav.scrolled {
   width: 60px;
   height: 3px;
   background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--gold-light));
-  border-radius: 3px
+  border-radius: 3px;
 }
 
 .non-hero {
@@ -255,7 +259,7 @@ nav.scrolled {
   margin: 0 0 50px;
   text-align: center;
   position: relative;
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .title::after {
@@ -266,7 +270,7 @@ nav.scrolled {
   transform: translateX(-50%);
   width: 100px;
   height: 2px;
-  background: var(--gold)
+  background: var(--gold);
 }
 
 /* About */
